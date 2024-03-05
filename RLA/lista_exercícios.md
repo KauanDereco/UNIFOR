@@ -20,3 +20,20 @@ G --SIM--> I{{o número é par!}}
 H --> Z
 I --> Z
 ```
+
+### Pseudocódigo
+```
+1  ALGORÍTIMO verificapar_ímpar
+2  DECLARE número, resto NUMÉRICO
+3  ESCREVA "Digite um número: "
+4  LEIA número
+5  SE número > 0 ENTÃO
+6    resto = número % 2
+7    SE resto == 0 ENTÂO
+8      ESCREVA "0 número é par!"
+9    SENÃO
+10     ESCREVA "O número é ímpar!"
+11 SENÃO
+12  ESCREVA "O número não positivo!"
+13 FIM_ALGORITMO
+```
