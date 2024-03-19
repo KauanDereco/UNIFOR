@@ -4,7 +4,7 @@
 **Nome**: Nome do estudante
 **Disciplina**: Raciocínio Lógico Algorítmico
 
-## Exercício 3
+## Lista 1 Exercício 1
 ### Fluxograma
 ```mermaid
 flowchart TD
