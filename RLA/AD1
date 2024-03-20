@@ -1,0 +1,123 @@
+
+exercícios carubbi
+ AD1
+ QUESTÃO 1
+ ```
+ INÍCIO
+    Escreva "Digite o valor de a: "
+    Leia a
+    Escreva "Digite o valor de b: "
+    Leia b
+    aux <- a
+    a <- b
+    b <- aux
+    Escreva "a =", a
+    Escreva "b =", b
+FIM
+```
+QUESTÃO 2
+```
+INÍCIO
+    Escreva "Digite o número de alunos: "
+    Leia n
+    cont <- 0
+    Para i de 1 até n Passo 1 Faça
+        Escreva "Digite a nota do aluno ", i, ":"
+        Leia nota
+        Se nota >= 50 E nota <= 100 Então
+            cont <- cont + 1
+        Fim Se
+    Fim Para
+    Escreva "Número de alunos aprovados: ", cont
+FIM
+```
+QUESTÃO 3
+```
+INÍCIO
+INÍCIO
+    Escreva "Digite a quantidade de números (n >= 0): "
+    Leia n
+    Se n < 0 Então
+        Escreva "O valor deve ser maior ou igual a zero!"
+    Senão
+        soma <- 0
+        i <- 1
+        Enquanto i <= n Faça
+            Escreva "Digite um número: "
+            Leia num
+            soma <- soma + num
+            i <- i + 1
+        Fim Enquanto
+        Escreva "A soma dos numeros é ", soma
+    Fim Se
+FIM
+```
+QUESTÃO 4
+```
+INÍCIO
+    Escreva "Digite o número de termos da série S: 
+    Leia n
+    S <- 0
+    Para i de 0 até n Passo 1 Faça
+        numerador <- 2 * i + 1
+        denominador <- 2 * i + 2
+        termo <- numerador / denominador
+        S <- S + termo
+    Fim Para
+    Escreva "Soma da série S é ", S
+FIM
+```
+
+QUESTÃO 5
+```
+INÍCIO
+    Escreva "Digite um número inteiro não-negativo: "
+    Leia n
+    Se n >= 0 Então
+        fator <- 1
+        Para i de 1 até n Passo 1 Faça
+            fator <- fator * i
+        Fim Para
+        Escreva "O fatorial de ", n, " é: ", fator
+    Senão
+        Escreva "O valor deve ser maior ou igual a zero!"
+    Fim Se
+FIM
+```
+QUESTÃO 6
+```
+INÍCIO
+    Escreva "Número de termos da série Fibonacci: "
+    Leia n
+    a <- 0
+    b <- 1
+    Para i de 1 até n Passo 1 Faça
+        Escreva a
+        termo_atual <- a + b
+        a <- b
+        b <- termo_atual
+    Fim Para
+FIM
+```
+QUESTÃO 7
+```
+INÍCIO
+    Escreva "Digite um número inteiro: "
+    Leia num
+    Se num >= 0 Então
+        num_inv <- 0
+        Se num > 0 Então
+            Enquanto num > 0 Faça
+                digito <- num % 10
+                num_inv <- num_inv * 10 + digito
+                num <- num // 10
+            Fim Enquanto
+            Escreva "Número invertido:", numero_inv
+        Senão
+            Escreva "Número invertido:", num
+        Fim Se
+    Senão
+        Escreva "O número deve ser positivo!"
+    Fim Se
+FIM
+```
