@@ -81,5 +81,17 @@ ALGORITMO calcular_novo_salario
     ESCREVA "Novo salário: ", novo_salario
 FIM_ALGORITMO
 ```
-
+### Teste de mesa
+```
+| Etapa | Descrição                                        | Dados/Resultado |
+|-------|--------------------------------------------------|------------------|
+| Início|                                                |                  |
+| Passo 1| Digite o salário do funcionário:               | salario =        |
+| Passo 2| Verificar se salario <= 500                     |                  |
+|        |   - Verdadeiro:                                |                  |
+|        |     - aumento = salario * 0.2                  |                  |
+| Passo 3| Calcular novo salário:                         |                  |
+|        |     - novo_salario = salario + aumento         |                  |
+| Passo 4| Imprimir novo salário:                         | novo_salario     |
+| Passo 5| Fim                                            |                  |
 
