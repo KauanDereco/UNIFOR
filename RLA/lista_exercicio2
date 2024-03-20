@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
 A([INÍCIO]) --> B{{Digite o primeiro número}}
 B --> C[\num1\]
@@ -27,3 +28,4 @@ T -- NÃO --> W[Escrever "Erro: Divisão por zero."]
 W --> L
 S -- NÃO --> X[Escrever "Operador inválido."]
 X --> L
+```
