@@ -141,3 +141,16 @@ Início
     Escrever "O resultado é:", resultado
 Fim
 ```
+
+#### Teste de mesa 
+
+| Etapa | Descrição                              | Dados/Resultado  |
+|-------|----------------------------------------|------------------|
+| Início|                                        |                  |
+| Passo 1| Digite o primeiro número - a:         | a = 10           |
+| Passo 2| Digite o operador: +, -, *, /:        |  +                |
+| Passo 3| Digite o segundo número - b:          | b = 5            |
+| Passo 4| Verificar operador válido:            | Sim              |
+| Passo 5| Realizar operação:                    | resultado = 15   |
+| Passo 6| Imprimir resultado:                   | 15               |
+| Passo 7| Fim                                   |                  |
