@@ -1,5 +1,5 @@
-### Exercicio 1
-### Fluxograma
+Exercicio 1
+#### Fluxograma
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{Digite o primeiro número}}
