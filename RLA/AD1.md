@@ -1,4 +1,16 @@
-AD1
+<img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
+
+**Curso:** ciencia da computação <br>
+**Disciplina:** Raciocínio lógico algorítmico <br>
+**Código/Turma:** T160-39 <br>
+**Professor:** Ricardo Carubbi <br>
+**Data:** 20/03/2024 <br>
+**Aluno(a):** kauan Araujo Lima Figueredo <br>
+**Matrícula:** 2417149 <br>
+
+**1a chamada (Sim/Não):** sim <br>
+**2a chamada (Sim/Não):** nao
+
 ### Exercicio 1
 ```
 1  ALGORITMO troca_valores
