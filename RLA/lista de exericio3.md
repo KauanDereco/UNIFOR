@@ -49,3 +49,47 @@ Vamos criar uma tabela semelhante usando o pseudocódigo fornecido:
 | 13     | V           | 1     | F          | "13 é um número ímpar." |
 | 30     | V           | 0     | V          | "30 é um número par." |
 
+### Exercicio 2
+
+### Fluxograma
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{Inicializar contador}}
+B --> C[\contador = 0\]
+C --> D{Verificar se contador é menor ou igual a 30}
+D -- SIM --> E{{Exibir contador}}
+E --> F[ESCREVA contador]
+F --> G{{Incrementar contador}}
+G --> H[contador = contador + 3]
+H --> D
+D -- NÃO --> I([FIM])
+
+```
+### Pseudocodigo
+```
+1  ALGORITMO exibir_multiplos_de_3
+2  DECLARE contador: INTEIRO
+3  INICIO
+4    PARA contador DE 0 ATÉ 30 PASSO 3 FAÇA
+5        ESCREVA contador
+6    FIM_PARA
+7   
+8    FIM
+
+```
+### Teste de mesa
+
+| contador | contador é múltiplo de 3 | Saída |
+| -------- | ------------------------ | ------|
+| 0        | V                        | 0     |
+| 3        | V                        | 3     |
+| 6        | V                        | 6     |
+| 9        | V                        | 9     |
+| 12       | V                        | 12    |
+| 15       | V                        | 15    |
+| 18       | V                        | 18    |
+| 21       | V                        | 21    |
+| 24       | V                        | 24    |
+| 27       | V                        | 27    |
+| 30       | V                        | 30    |
+
