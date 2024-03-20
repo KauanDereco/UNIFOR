@@ -135,9 +135,8 @@ X --> L
 28     ESCREVA "Operador inválido."
 29   FIM_SE
 30 FIM
-
-### Teste de mesa
 ```
+### Teste de mesa
 | Etapa | Descrição                              | Dados/Resultado |
 |-------|----------------------------------------|------------------|
 | Início|                                        |                  |
