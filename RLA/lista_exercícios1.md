@@ -154,3 +154,49 @@ Fim
 | Passo 5| Realizar operação:                    | resultado = 15   |
 | Passo 6| Imprimir resultado:                   | 15               |
 | Passo 7| Fim                                   |                  |
+
+### Exercicio 4
+
+### Fluxograma
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{Digite a idade do candidato}}
+B --> C[\idade\]
+C --> D{{Verificar se a idade é maior ou igual a 18}}
+D -- SIM --> E{{'Pode tirar CNH'}}
+E --> F([FIM])
+D -- NÃO --> G{{Calcular quantos anos faltam para completar 18}}
+G --> H[anos_faltantes = 18 - idade]
+H --> I{{'Faltam ', anos_faltantes, ' anos para tirar CNH'}}
+I --> F
+```
+### Pseudocodigo
+```
+1  ALGORITMO verificar_idade_para_cnh
+2  DECLARE idade, anos_faltantes: INTEIRO
+3  INICIO
+4    ESCREVA "Digite a idade do candidato: "
+5    LEIA idade
+6    
+7    SE idade >= 18 ENTÃO
+8        ESCREVA "Pode tirar CNH"
+9    SENÃO
+10       anos_faltantes = 18 - idade
+11       ESCREVA "Faltam ", anos_faltantes, " anos para tirar CNH"
+12   FIM_SE
+13   
+14   FIM
+
+```
+#### Teste de mesa 
+
+| Etapa | Descrição                              | Dados/Resultado |
+|-------|----------------------------------------|------------------|
+| Início|                                        |                  |
+| Passo 1| Digite a idade:                       | idade = 12       |
+| Passo 2| Verificar idade entre 5 e 7 anos?     | Sim              |
+| Passo 3| Verificar idade entre 8 e 10 anos?    | Não              |
+| Passo 4| Verificar idade entre 11 e 13 anos?   | Sim              |
+| Passo 5| Verificar idade entre 14 e 17 anos?   | Não              |
+| Passo 6| Classificar como Juvenil A            |                  |
+| Passo 7| Fim                                   |                  |
