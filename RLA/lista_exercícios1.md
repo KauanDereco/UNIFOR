@@ -82,7 +82,6 @@ ALGORITMO calcular_novo_salario
 FIM_ALGORITMO
 ```
 ### Teste de mesa
-```
 | Etapa | Descrição                                        | Dados/Resultado |
 |-------|--------------------------------------------------|------------------|
 | Início|                                                |                  |
