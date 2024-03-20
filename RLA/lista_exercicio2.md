@@ -53,8 +53,8 @@ E --> F{{A temperatura em Fahrenheit é: , temp_F}}
 F --> G([FIM])
 ```
 ### Pseucodigo
-```mermaid
-1  ALGORITMO converter_temp
+```
+1  ALGORITMO converter_temperatura
 2  DECLARE temp_C, temp_F: REAL
 3  INICIO
 4    ESCREVA "Digite a temperatura em Celsius (C): "
@@ -62,6 +62,7 @@ F --> G([FIM])
 6    temp_F = (9/5) * temp_C + 32
 7    ESCREVA "A temperatura em Fahrenheit é: ", temp_F
 8  FIM
+
 ```
 ### Teste de mesa
 | Teste | temp_C | temp_F (cálculo esperado) | Saída esperada |
