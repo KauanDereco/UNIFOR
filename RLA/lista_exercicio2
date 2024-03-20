@@ -1,1 +1,29 @@
-
+flowchart TD
+A([INÍCIO]) --> B{{Digite o primeiro número}}
+B --> C[\num1\]
+C --> D{{Digite o segundo número}}
+D --> E[\num2\]
+E --> F{{Digite o operador (+, -, *, /)}}
+F --> G[\operador\]
+G --> H{operador é '+'}
+H -- SIM --> I{Efetuar adição}
+I --> J[resultado = num1 + num2]
+J --> K{{'O resultado da adição é: ', resultado}}
+K --> L([FIM])
+H -- NÃO --> M{operador é '-'}
+M -- SIM --> N{Efetuar subtração}
+N --> O[resultado = num1 - num2]
+O --> K
+M -- NÃO --> P{operador é '*'}
+P -- SIM --> Q{Efetuar multiplicação}
+Q --> R[resultado = num1 * num2]
+R --> K
+P -- NÃO --> S{operador é '/'}
+S -- SIM --> T{Verificar divisão por zero}
+T -- SIM --> U[Se num2 != 0 então calcular divisão]
+U --> V[resultado = num1 / num2]
+V --> K
+T -- NÃO --> W[Escrever "Erro: Divisão por zero."]
+W --> L
+S -- NÃO --> X[Escrever "Operador inválido."]
+X --> L
