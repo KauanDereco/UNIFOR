@@ -149,3 +149,29 @@ X --> L
 | Passo 6| Imprimir resultado:                   | 15               |
 | Passo 7| Fim                                   |                  |
 
+### Exercicio 4
+
+### Fluxograma
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{Digite a idade}}
+B --> C[\idade\]
+C --> D{idade >= 5}
+D -- SIM --> E{idade <= 7}
+E -- SIM --> F{{'Categoria: Infantil A'}}
+F --> L([FIM])
+E -- NÃO --> G{idade <= 10}
+G -- SIM --> H{{'Categoria: Infantil B'}}
+H --> L
+G -- NÃO --> I{idade <= 13}
+I -- SIM --> J{{'Categoria: Juvenil A'}}
+J --> L
+I -- NÃO --> K{idade <= 17}
+K -- SIM --> M{{'Categoria: Juvenil B'}}
+M --> L
+K -- NÃO --> N{{'Categoria: Adulto'}}
+N --> L
+D -- NÃO --> O{{'Idade inválida'}}
+O --> L
+
+```
