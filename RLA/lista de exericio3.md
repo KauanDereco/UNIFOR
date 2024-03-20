@@ -141,7 +141,7 @@ A([Início]) --> B[Inicializar soma como 0]
 ### Exercicio 4
 
 ### Fluxograma 
-mermaid
+```mermaid
 flowchart TD
 A([INÍCIO]) --> B{{Inicializar soma e contador}}
 B --> C[soma = 0]
@@ -165,9 +165,9 @@ L -- NÃO --> T{{Exibir mensagem de nenhuma nota inserida}}
 T --> U[ESCREVA Nenhuma nota foi inserida!]
 U --> V([FIM])
 E -- NÃO --> V
-
+```
 ### Pseudocodigo
-
+```
 1  ALGORITMO calcular_media_alunos
 2  DECLARE nota, soma, contador: REAL
 3  DECLARE quantidade_notas: INTEIRO
@@ -195,10 +195,8 @@ E -- NÃO --> V
 25   FIM_SE
 26   
 27   FIM
-
-
+```
 ### Teste de mesa
-
 | Nota | Nota >= 0 | Soma | Contador | Saída |
 | ---- | --------- | ---- | -------- | ------|
 | 5.0  | V         | 5.0  | 1        | |
