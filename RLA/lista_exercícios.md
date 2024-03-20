@@ -44,3 +44,38 @@ I --> Z
 | 0  | V | 0 | V | "O número é par!" |
 | 13 | V | 1 | F | "O número é impar!" |
 | 30 | V | 0 | V | "O número é par!" |
+
+### EXERCICIO 2
+```mermaid
+graph TD;
+    A[Início] --> B[Digite o salário atual];
+    B --> C{Salário <= R$ 500?};
+    C -->|Sim| D[NovoSalario = Salario * 1.2];
+    C -->|Não| E[NovoSalario = Salario * 1.1];
+    D --> F[Imprimir NovoSalario];
+    E --> F;
+    F --> G[Fim];
+
+```
+###PSEUDOCODIGO
+```
+1. Início
+2. Digite o salário atual
+3. Se salário <= R$ 500 então
+4.     NovoSalario = Salario * 1.2 (aumento de 20%)
+5. Senão
+6.     NovoSalario = Salario * 1.1 (aumento de 10%)
+7. Fim Se
+8. Imprimir NovoSalario
+9. Fim
+```
+Aqui está o teste de mesa para o fluxograma fornecido:
+
+#### Teste de mesa
+| Salário | Salário <= R$ 500? | NovoSalario | Saída |
+| ------- | ------------------- | ----------- | ----- |
+| R$ 300  | Sim                 | R$ 360      | R$ 360 impresso |
+| R$ 600  | Não                 | R$ 660      | R$ 660 impresso |
+
+
+
