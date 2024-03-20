@@ -1,123 +1,139 @@
+AD1
+### Exercicio 1
+```
+1  ALGORITMO troca_valores
+2  DECLARE a, b, aux: INTEIRO
+3  INICIO
+4    ESCREVA "Digite o valor da a: "
+5    LEIA a
+6    ESCREVA "Digite o valor da b: "
+7    LEIA b
+8    aux = a
+9    a = b
+10   b = aux
+11   ESCREVA "a =", a
+12   ESCREVA "b =", b
+13 FIM
+```
+### Exercicio 2
+```
+1  ALGORITMO contagem_aprovados
+2  DECLARE n, cont, i, nota: INTEIRO
+3  INICIO
+4    ESCREVA "Digite o número de alunos: "
+5    LEIA n
+6    cont = 0
+7    i = 1
+8    ENQUANTO i <= n FAÇA
+9      ESCREVA "Digite a nota do aluno ", i, ": "
+10     LEIA nota
+11     SE nota >= 50 E nota <= 100 ENTAO
+12       cont = cont + 1
+13     FIM_SE
+14     i = i + 1
+15   FIM_ENQUANTO
+16   ESCREVA "Número de alunos aprovados: ", cont
+17 FIM
 
-exercícios carubbi
- AD1
- QUESTÃO 1
- ```
- INÍCIO
-    Escreva "Digite o valor de a: "
-    Leia a
-    Escreva "Digite o valor de b: "
-    Leia b
-    aux <- a
-    a <- b
-    b <- aux
-    Escreva "a =", a
-    Escreva "b =", b
-FIM
 ```
-QUESTÃO 2
+### Exercicio 3
 ```
-INÍCIO
-    Escreva "Digite o número de alunos: "
-    Leia n
-    cont <- 0
-    Para i de 1 até n Passo 1 Faça
-        Escreva "Digite a nota do aluno ", i, ":"
-        Leia nota
-        Se nota >= 50 E nota <= 100 Então
-            cont <- cont + 1
-        Fim Se
-    Fim Para
-    Escreva "Número de alunos aprovados: ", cont
-FIM
-```
-QUESTÃO 3
-```
-INÍCIO
-INÍCIO
-    Escreva "Digite a quantidade de números (n >= 0): "
-    Leia n
-    Se n < 0 Então
-        Escreva "O valor deve ser maior ou igual a zero!"
-    Senão
-        soma <- 0
-        i <- 1
-        Enquanto i <= n Faça
-            Escreva "Digite um número: "
-            Leia num
-            soma <- soma + num
-            i <- i + 1
-        Fim Enquanto
-        Escreva "A soma dos numeros é ", soma
-    Fim Se
-FIM
-```
-QUESTÃO 4
-```
-INÍCIO
-    Escreva "Digite o número de termos da série S: 
-    Leia n
-    S <- 0
-    Para i de 0 até n Passo 1 Faça
-        numerador <- 2 * i + 1
-        denominador <- 2 * i + 2
-        termo <- numerador / denominador
-        S <- S + termo
-    Fim Para
-    Escreva "Soma da série S é ", S
-FIM
-```
+1  ALGORITMO soma_numeros
+2  DECLARE n, soma, i, num: INTEIRO
+3  INICIO
+4    ESCREVA "Digite a quantidade de números (n >= 0): "
+5    LEIA n
+6    SE n < 0 ENTAO
+7      ESCREVA "O valor deve ser maior ou igual a zero!"
+8      RETORNE
+9    FIM_SE
+10   soma = 0
+11   i = 1
+12   ENQUANTO i <= n FAÇA
+13     ESCREVA "Digite um número: "
+14     LEIA num
+15     soma = soma + num
+16     i = i + 1
+17   FIM_ENQUANTO
+18   ESCREVA "A soma dos números é ", soma
+19 FIM
 
-QUESTÃO 5
 ```
-INÍCIO
-    Escreva "Digite um número inteiro não-negativo: "
-    Leia n
-    Se n >= 0 Então
-        fator <- 1
-        Para i de 1 até n Passo 1 Faça
-            fator <- fator * i
-        Fim Para
-        Escreva "O fatorial de ", n, " é: ", fator
-    Senão
-        Escreva "O valor deve ser maior ou igual a zero!"
-    Fim Se
-FIM
+### Exercicio 4
 ```
-QUESTÃO 6
+1  ALGORITMO serie_S
+2  DECLARE n, i, numerador, denominador: INTEIRO
+3  DECLARE termo, S: REAL
+4  INICIO
+5    ESCREVA "Digite o número de termos da série S: "
+6    LEIA n
+7    S = 0
+8    PARA i DE 0 ATÉ n PASSO 1 FAÇA
+9      numerador = 2 * i + 1
+10     denominador = 2 * i + 2
+11     termo = numerador / denominador
+12     S += termo
+13   FIM_PARA
+14   ESCREVA "Soma da série S é ", S
+15 FIM
+
 ```
-INÍCIO
-    Escreva "Número de termos da série Fibonacci: "
-    Leia n
-    a <- 0
-    b <- 1
-    Para i de 1 até n Passo 1 Faça
-        Escreva a
-        termo_atual <- a + b
-        a <- b
-        b <- termo_atual
-    Fim Para
-FIM
+### Exercicio 5
 ```
-QUESTÃO 7
+1  ALGORITMO calcular_fatorial
+2  DECLARE n, i, fator: INTEIRO
+3  INICIO
+4    ESCREVA "Digite um número inteiro não-negativo: "
+5    LEIA n
+6    SE n < 0 ENTAO
+7      ESCREVA "O valor deve ser maior ou igual a zero!"
+8      RETORNE
+9    FIM_SE
+10   fator = 1
+11   PARA i DE 1 ATÉ n PASSO 1 FAÇA
+12     fator = fator * i
+13   FIM_PARA
+14   ESCREVA "O fatorial de ", n, " é: ", fator
+15 FIM
+
 ```
-INÍCIO
-    Escreva "Digite um número inteiro: "
-    Leia num
-    Se num >= 0 Então
-        num_inv <- 0
-        Se num > 0 Então
-            Enquanto num > 0 Faça
-                digito <- num % 10
-                num_inv <- num_inv * 10 + digito
-                num <- num // 10
-            Fim Enquanto
-            Escreva "Número invertido:", numero_inv
-        Senão
-            Escreva "Número invertido:", num
-        Fim Se
-    Senão
-        Escreva "O número deve ser positivo!"
-    Fim Se
-FIM
+### Exercicio 6
+```
+1  ALGORITMO serie_fibonacci
+2  DECLARE n, a, b, termo_atual, i: INTEIRO
+3  INICIO
+4    ESCREVA "Número de termos da série Fibonacci: "
+5    LEIA n
+6    a = 0
+7    b = 1
+8    PARA i DE 1 ATÉ n PASSO 1 FAÇA
+9      ESCREVA a
+10     termo_atual = a + b
+11     a = b
+12     b = termo_atual
+13   FIM_PARA
+14 FIM
+
+```
+### Exercicio 7
+```
+1  ALGORITMO inverte_numero
+2  DECLARE num, num_inv, digito: INTEIRO
+3  INICIO
+4    ESCREVA "Digite um número inteiro: "
+5    LEIA num
+6    SE num >= 0 ENTAO
+7      num_inv = 0
+8      SE num > 0 ENTAO
+9        REPITA
+10         digito = num % 10
+11         num_inv = num_inv * 10 + digito
+12         num = num // 10
+13        ATÉ num > 0
+14     ESCREVA "Número invertido:", num_inv
+15   SENAO
+16     ESCREVA "O número deve ser positivo!"
+17   FIM_SE
+18 FIM
+
 ```
