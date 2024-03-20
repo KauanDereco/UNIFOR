@@ -202,3 +202,22 @@ O --> L
 23   
 24   FIM
 ```
+### Teste de mesa
+```
+| Etapa | Descrição                                        | Dados/Resultado |
+|-------|--------------------------------------------------|------------------|
+| Início|                                                |                  |
+| Passo 1| Digite a idade:                                 | idade =          |
+| Passo 2| Verificar idade >= 5 E idade <= 7              |                  |
+|        |   - Verdadeiro:                                |                  |
+|        |     - Categoria: Infantil A                    |                  |
+| Passo 3| Verificar idade <= 10                          |                  |
+|        |   - Verdadeiro:                                |                  |
+|        |     - Categoria: Infantil B                    |                  |
+| Passo 4| Verificar idade <= 13                          |                  |
+|        |   - Falso:                                     |                  |
+| Passo 5| Verificar idade <= 17                          |                  |
+|        |   - Falso:                                     |                  |
+| Passo 6| Categoria: Adulto                               |                  |
+| Passo 7| Fim                                            |                  |
+```
