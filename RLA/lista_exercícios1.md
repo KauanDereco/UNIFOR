@@ -1,7 +1,7 @@
 
 # UNIFOR
 
-**Nome**: Nome do estudante
+**Nome**: Kauan
 **Disciplina**: Raciocínio Lógico Algorítmico
 
 ## Lista 1 Exercício 1
