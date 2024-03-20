@@ -138,6 +138,8 @@ X --> L
 
 ### Teste de mesa
 ```
+| Etapa | Descrição                              | Dados/Resultado |
+|-------|----------------------------------------|------------------|
 | Início|                                        |                  |
 | Passo 1| Digite o primeiro número - a:         | a = 10           |
 | Passo 2| Digite o operador: +, -, *, /:        | operador = "+"   |
