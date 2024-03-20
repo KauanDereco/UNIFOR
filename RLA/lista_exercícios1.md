@@ -107,3 +107,37 @@ flowchart
     F --> H[Imprimir resultado]
     H --> I[Fim]
 ```
+#### Pseudocódigo 
+
+
+Algoritmo Calculadora
+```
+Início
+    Escrever "Digite o primeiro número - a:"
+    Ler a
+    Escrever "Digite o operador: +, -, *, /:"
+    Ler operador
+    Escrever "Digite o segundo número - b:"
+    Ler b
+    
+    Se operador é válido Então
+        Se operador = "+" Então
+            resultado = a + b
+        Senão Se operador = "-" Então
+            resultado = a - b
+        Senão Se operador = "*" Então
+            resultado = a * b
+        Senão Se operador = "/" E b != 0 Então
+            resultado = a / b
+        Senão
+            Escrever "Operador inválido"
+            Retornar
+        Fim Se
+    Senão
+        Escrever "Operador inválido"
+        Retornar
+    Fim Se
+    
+    Escrever "O resultado é:", resultado
+Fim
+```
