@@ -45,50 +45,41 @@ I --> Z
 | 13 | V | 1 | F | "O número é impar!" |
 | 30 | V | 0 | V | "O número é par!" |
 
-### EXERCICIO 2
-```mermaid
-graph TD;
-    A[Início] --> B[Digite o salário atual];
-    B --> C{Salário <= R$ 500?};
-    C -->|Sim| D[NovoSalario = Salario * 1.2];
-    C -->|Não| E[NovoSalario = Salario * 1.1];
-    D --> F[Imprimir NovoSalario];
-    E --> F;
-    F --> G[Fim];
+### Exercicio 2
 
-```
-###PSEUDOCODIGO
-```
-1. Início
-2. Digite o salário atual
-3. Se salário <= R$ 500 então
-4.     NovoSalario = Salario * 1.2 (aumento de 20%)
-5. Senão
-6.     NovoSalario = Salario * 1.1 (aumento de 10%)
-7. Fim Se
-8. Imprimir NovoSalario
-9. Fim
-```
-
-#### Teste de mesa
-| Salário | Salário <= R$ 500? | NovoSalario | Saída |
-| ------- | ------------------- | ----------- | ----- |
-| R$ 300  | Sim                 | R$ 360      | R$ 360 impresso |
-| R$ 600  | Não                 | R$ 660      | R$ 660 impresso |
-
-###exercicio 3
 ### Fluxograma
 ```mermaid
-flowchart TD;
-    Inicio --> ReceberNota1;
-    ReceberNota1 --> ReceberNota2;
-    ReceberNota2 --> CalcularMedia;
-    CalcularMedia -->|Se média >= 6| Aprovado;
-    CalcularMedia -->|Se média < 6| Reprovado;
-    Aprovado --> MostrarAprovado;
-    Reprovado --> MostrarReprovado;
-    MostrarAprovado --> Fim;
-    MostrarReprovado --> Fim;
+flowchart TD
+A([INÍCIO]) --> B{{Digite o salário do funcionário}}
+B --> C[\salario\]
+C --> D{salario <= 500}
+D -- SIM --> E{aumento = salario * 0.2}
+E --> F{{novo_salario = salario + aumento}}
+F --> G{{'Novo salário: ', novo_salario}}
+G --> H([FIM])
+D -- NÃO --> I{aumento = salario * 0.1}
+I --> J{{novo_salario = salario + aumento}}
+J --> G
+
+```
+### Pseudocodigo
+```
+ALGORITMO calcular_novo_salario
+    DECLARE salario, aumento, novo_salario: REAL
+
+    ESCREVA "Digite o salário do funcionário: "
+    LEIA salario
+
+    SE salario <= 500 ENTAO
+        aumento = salario * 0.2
+    SENAO
+        aumento = salario * 0.1
+    FIM_SE
+
+    novo_salario = salario + aumento
+
+    ESCREVA "Novo salário: ", novo_salario
+FIM_ALGORITMO
 ```
 
 
