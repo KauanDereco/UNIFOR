@@ -1,45 +1,51 @@
 ### Exercicio 1
-
-#### Fluxograma
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite um número: }}
-B --> C[\n\]
-C --> D[\num = 1\]
-D --> E{num <= n}
-E --FALSE--> I([FIM])
-E --TRUE--> F{{"Num", num}}
-F --> G[num =+ 1]
-G --LOOP--> E
-```
+A([INÍCIO]) --> B{{Digite um número inteiro positivo}}
+B --> C[\numero\]
+C --> D{Verificar se número é negativo}
+D -- SIM --> E{{Exibir mensagem de erro e solicitar novo número}}
+E --> F[ESCREVA Número inválido. Por favor, digite um número inteiro positivo.]
+F --> B
+D -- NÃO --> G{{Verificar se número é par ou ímpar}}
+G --> H{numero MOD 2 = 0}
+H -- SIM --> I{{Exibir Número é par}}
+I --> J[ESCREVA numero, é um número par.]
+J --> K([FIM])
+H -- NÃO --> L{{Exibir Número é ímpar}}
+L --> M[ESCREVA numero,  é um número ímpar.]
+M --> K
 
-#### Pseudocódigo
 ```
-1 ALGORITMO print_n_primeiros
-2 DECLARE n, num: INTEIRO
-3 INICIO
-4 ESCREVA “Digite um número: ”
-4 LEIA n			// variável de entrada n
-4 num ← 1			// variável num inicializada
-5 ENQUANTO num <= n FAÇA	// n iterações
-7	ESCREVA “Número ”, num
-8	num ← num + 1		// num =+ 1 (incremento)
-8 FIM_ENQUANTO
-9 FIM
+### Pseudocodigo
 ```
+1  ALGORITMO verificar_par_ou_impar
+2  DECLARE numero: INTEIRO
+3  INICIO
+4    REPITA
+5        ESCREVA "Digite um número inteiro positivo: "
+6        LEIA numero
+7        
+8        SE numero < 0 ENTÃO
+9            ESCREVA "Número inválido. Por favor, digite um número inteiro positivo."
+10       FIM_SE
+11   ATÉ que numero >= 0
+12   
+13   SE numero MOD 2 = 0 ENTÃO
+14       ESCREVA numero, " é um número par."
+15   SENÃO
+16       ESCREVA numero, " é um número ímpar."
+17   FIM_SE
+18   
+19   FIM
+```
+### Teste de mesa
+Vamos criar uma tabela semelhante usando o pseudocódigo fornecido:
 
-#### Teste de mesa
-| it | n  | num | num <= n | Saída      | num =+ 1 |
-| -- | -- | --  | --       | --         | --       |
-| 1  | 10 | 1   | True     | Número 1   | 2        |
-| 2  | 10 | 2   | True     | Número 2   | 3        |
-| 3  | 10 | 3   | True     | Número 3   | 4        |
-| 4  | 10 | 4   | True     | Número 4   | 5        |
-| 5  | 10 | 5   | True     | Número 5   | 6        |
-| 6  | 10 | 6   | True     | Número 6   | 7        |
-| 7  | 10 | 7   | True     | Número 7   | 8        |
-| 8  | 10 | 8   | True     | Número 8   | 9        |
-| 9  | 10 | 9   | True     | Número 9   | 10       |
-| 10 | 10 | 11  | True     | Número 10  | 11       |
-| 11 | 10 | 11  | False    |            |          |
+| número | número >= 0 | resto | resto == 0 | Saída |
+| ------ | ----------- | ----- | ---------- | ------|
+| -1     | F           |       |            | "Número inválido. Por favor, digite um número inteiro positivo." |
+| 0      | V           | 0     | V          | "0 é um número par." |
+| 13     | V           | 1     | F          | "13 é um número ímpar." |
+| 30     | V           | 0     | V          | "30 é um número par." |
 
