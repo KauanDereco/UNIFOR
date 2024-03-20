@@ -69,7 +69,6 @@ graph TD;
 8. Imprimir NovoSalario
 9. Fim
 ```
-Aqui está o teste de mesa para o fluxograma fornecido:
 
 #### Teste de mesa
 | Salário | Salário <= R$ 500? | NovoSalario | Saída |
@@ -77,5 +76,19 @@ Aqui está o teste de mesa para o fluxograma fornecido:
 | R$ 300  | Sim                 | R$ 360      | R$ 360 impresso |
 | R$ 600  | Não                 | R$ 660      | R$ 660 impresso |
 
+###exercicio 3
+### Fluxograma
+```mermaid
+flowchart TD;
+    Inicio --> ReceberNota1;
+    ReceberNota1 --> ReceberNota2;
+    ReceberNota2 --> CalcularMedia;
+    CalcularMedia -->|Se média >= 6| Aprovado;
+    CalcularMedia -->|Se média < 6| Reprovado;
+    Aprovado --> MostrarAprovado;
+    Reprovado --> MostrarReprovado;
+    MostrarAprovado --> Fim;
+    MostrarReprovado --> Fim;
+```
 
 
