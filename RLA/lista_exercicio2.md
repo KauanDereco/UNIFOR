@@ -136,9 +136,8 @@ X --> L
 29   FIM_SE
 30 FIM
 
-### Teste de mesa 
-| Etapa | Descrição                              | Dados/Resultado |
-|-------|----------------------------------------|------------------|
+### Teste de mesa
+```
 | Início|                                        |                  |
 | Passo 1| Digite o primeiro número - a:         | a = 10           |
 | Passo 2| Digite o operador: +, -, *, /:        | operador = "+"   |
@@ -147,4 +146,4 @@ X --> L
 | Passo 5| Realizar operação:                    | resultado = 15   |
 | Passo 6| Imprimir resultado:                   | 15               |
 | Passo 7| Fim                                   |                  |
-```
+
