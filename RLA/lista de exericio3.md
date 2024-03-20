@@ -42,3 +42,4 @@ G --LOOP--> E
 | 9  | 10 | 9   | True     | Número 9   | 10       |
 | 10 | 10 | 11  | True     | Número 10  | 11       |
 | 11 | 10 | 11  | False    |            |          |
+
