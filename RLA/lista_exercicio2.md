@@ -69,3 +69,71 @@ F --> G([FIM])
 | ----- | ------ | -------------------------- | --------------- |
 | 1     | 0      | 32                         | "A temperatura em Fahrenheit é: 32" |
 
+### Exercicio 3
+
+### Fluxograma
+```mermaid
+flowchart TD
+A([INÍCIO]) --> B{{Digite o primeiro número}}
+B --> C[\num1\]
+C --> D{{Digite o segundo número}}
+D --> E[\num2\]
+E --> F{{Digite o operador +, -, *, /}}
+F --> G[\operador\]
+G --> H{operador é '+'}
+H -- SIM --> I{Efetuar adição}
+I --> J[resultado = num1 + num2]
+J --> K{{'O resultado da adição é: ', resultado}}
+K --> L([FIM])
+H -- NÃO --> M{operador é '-'}
+M -- SIM --> N{Efetuar subtração}
+N --> O[resultado = num1 - num2]
+O --> K
+M -- NÃO --> P{operador é '*'}
+P -- SIM --> Q{Efetuar multiplicação}
+Q --> R[resultado = num1 * num2]
+R --> K
+P -- NÃO --> S{operador é '/'}
+S -- SIM --> T{Verificar divisão por zero}
+T -- SIM --> U[Se num2 != 0 então calcular divisão]
+U --> V[resultado = num1 / num2]
+V --> K
+T -- NÃO --> W[Escrever Erro: Divisão por zero.]
+W --> L
+S -- NÃO --> X[Escrever Operador inválido.]
+X --> L
+```
+### Pseudocodigo
+```
+1  ALGORITMO calculadora
+2  DECLARE num1, num2, resultado: REAL
+3  DECLARE operador: CARACTERE
+4  INICIO
+5    ESCREVA "Digite o primeiro número: "
+6    LEIA num1
+7    ESCREVA "Digite o segundo número: "
+8    LEIA num2
+9    ESCREVA "Digite o operador (+, -, *, /): "
+10   LEIA operador
+11   SE operador = '+' ENTAO
+12     resultado = num1 + num2
+13     ESCREVA "O resultado da adição é: ", resultado
+14   SENAO SE operador = '-' ENTAO
+15     resultado = num1 - num2
+16     ESCREVA "O resultado da subtração é: ", resultado
+17   SENAO SE operador = '*' ENTAO
+18     resultado = num1 * num2
+19     ESCREVA "O resultado da multiplicação é: ", resultado
+20   SENAO SE operador = '/' ENTAO
+21     SE num2 != 0 ENTAO
+22       resultado = num1 / num2
+23       ESCREVA "O resultado da divisão é: ", resultado
+24     SENAO
+25       ESCREVA "Erro: Divisão por zero."
+26     FIM_SE
+27   SENAO
+28     ESCREVA "Operador inválido."
+29   FIM_SE
+30 FIM
+
+```
