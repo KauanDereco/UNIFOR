@@ -175,3 +175,30 @@ D -- NÃO --> O{{'Idade inválida'}}
 O --> L
 
 ```
+### Pseudocodigo
+```
+1  ALGORITMO categorizar_idade
+2  DECLARE idade: INTEIRO
+3  INICIO
+4    ESCREVA "Digite a idade: "
+5    LEIA idade
+6    
+7    SE idade >= 5 E idade <= 7 ENTÃO
+8        ESCREVA "Categoria: Infantil A"
+9    
+10   SENÃO SE idade <= 10 ENTÃO
+11       ESCREVA "Categoria: Infantil B"
+12   
+13   SENÃO SE idade <= 13 ENTÃO
+14       ESCREVA "Categoria: Juvenil A"
+15   
+16   SENÃO SE idade <= 17 ENTÃO
+17       ESCREVA "Categoria: Juvenil B"
+18   
+19   SENÃO
+20       ESCREVA "Categoria: Adulto"
+21   
+22   FIM_SE
+23   
+24   FIM
+```
