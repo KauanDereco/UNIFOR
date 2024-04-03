@@ -4,7 +4,8 @@
 **Nome**: Kauan
 **Disciplina**: Raciocínio Lógico Algorítmico
 
-## Lista 1 Exercício 1
+## Lista 1, Exercício 1
+
 ### Fluxograma
 ```mermaid
 flowchart TD
@@ -44,7 +45,16 @@ I --> Z
 | 0  | V | 0 | V | "O número é par!" |
 | 13 | V | 1 | F | "O número é impar!" |
 | 30 | V | 0 | V | "O número é par!" |
+### COMENTARIO
+Este pseudocódigo descreve um algoritmo para verificar se um número fornecido pelo usuário é par ou ímpar. 
 
+Primeiro, o usuário é solicitado a inserir um número, que é armazenado na variável 'número'. Em seguida, o algoritmo verifica se o número fornecido é maior que zero. Se for, o algoritmo continua a verificação. 
+
+Dentro do bloco condicional, o algoritmo calcula o resto da divisão do número por 2 (operador '%'). Se o resto for igual a zero, o número é considerado par e uma mensagem informando isso é exibida. Caso contrário, se o resto não for igual a zero, o número é considerado ímpar e uma mensagem informando isso é exibida. 
+
+Se o número fornecido não for positivo, o algoritmo exibirá uma mensagem indicando que o número não é positivo. 
+
+Este é um algoritmo simples e direto para determinar se um número é par ou ímpar, e é útil em várias situações onde essa informação é necessária, como em lógica de programação e análise de dados. No entanto, o algoritmo poderia ser melhorado para tratar corretamente números negativos, caso desejado.
 ### Exercicio 2
 
 ### Fluxograma
@@ -93,19 +103,26 @@ FIM_ALGORITMO
 |        |     - novo_salario = salario + aumento         |                  |
 | Passo 4| Imprimir novo salário:                         | novo_salario     |
 | Passo 5| Fim                                            |                  |
+### COMENTARIO 
+Este pseudocódigo descreve um algoritmo para calcular o novo salário de um funcionário com base em seu salário atual. 
 
+Inicialmente, o usuário é solicitado a inserir o salário do funcionário, que é armazenado na variável 'salario'. Em seguida, o algoritmo verifica se o salário é menor ou igual a 500. Se for, aplica um aumento de 20% sobre o salário atual, armazenando-o na variável 'aumento'. Caso contrário, se o salário for maior que 500, aplica um aumento de 10%.
+
+Depois de calcular o aumento, o algoritmo soma esse aumento ao salário original para obter o novo salário, armazenando-o na variável 'novo_salario'. Por fim, o novo salário é exibido na tela.
+
+Este é um algoritmo simples e eficaz para calcular o novo salário de um funcionário com base em uma política de aumento salarial pré-definida. Ele pode ser facilmente adaptado para incluir outras políticas de aumento salarial ou condições específicas da empresa.
 ### Exercicio 3
 
 ### Fluxograma 
 ```mermaid
 flowchart
-    A[Início] --> B[Digite o primeiro número - a]
+    A([Início]) --> B[Digite o primeiro número - a]
     B --> C(Digite o operador: +, -, *, /)
     C --> D[Digite o segundo número - b]
     D --> E{Operador é válido?}
     E -->|Sim| F[Realizar operação]
     F --> H[Imprimir resultado]
-    H --> I[Fim]
+    H --> I([Fim])
 ```
 #### Pseudocódigo 
 
@@ -155,6 +172,18 @@ Fim
 | Passo 6| Imprimir resultado:                   | 15               |
 | Passo 7| Fim                                   |                  |
 
+### COMENTARIO 
+Este pseudocódigo descreve um algoritmo simples para realizar operações aritméticas básicas entre dois números fornecidos pelo usuário. 
+
+Primeiro, o usuário é solicitado a fornecer o primeiro número ('a'), o operador desejado e o segundo número ('b'). 
+
+O algoritmo então verifica se o operador inserido pelo usuário é válido. Se for, o algoritmo executa a operação correspondente (adição, subtração, multiplicação ou divisão) e armazena o resultado na variável 'resultado'. 
+
+Se o operador não for válido, ou se o usuário tentar dividir por zero, uma mensagem de erro é exibida e o algoritmo é encerrado. 
+
+Finalmente, o resultado da operação é exibido na tela.
+
+Este é um algoritmo simples e útil para realizar cálculos básicos entre dois números, com validação de entrada para garantir que as operações sejam executadas corretamente.
 ### Exercicio 4
 
 ### Fluxograma
@@ -200,3 +229,10 @@ I --> F
 | Passo 5| Verificar idade entre 14 e 17 anos?   | Não              |
 | Passo 6| Classificar como Juvenil A            |                  |
 | Passo 7| Fim                                   |                  |
+
+### COMENTARIO 
+Este pseudocódigo descreve um algoritmo simples para verificar se um candidato tem a idade mínima necessária para tirar a Carteira Nacional de Habilitação (CNH) no Brasil, que é de 18 anos.
+
+Inicialmente, o usuário é solicitado a inserir a idade do candidato. Em seguida, o algoritmo verifica se a idade fornecida é maior ou igual a 18. Se for, exibe uma mensagem indicando que o candidato pode tirar a CNH. Caso contrário, calcula quantos anos faltam para o candidato atingir a idade mínima necessária (18 anos) e exibe uma mensagem informando os anos faltantes.
+
+Este é um algoritmo simples e direto para realizar essa verificação, sendo útil em sistemas de controle de acesso ou em formulários de solicitação de serviços relacionados à CNH.
